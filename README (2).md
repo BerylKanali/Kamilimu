@@ -15,6 +15,7 @@ In Rock, Scissors and Paper: **Rock** smashes scissors.
                              
 ---
 #### 1.What is a loop
+A sequence of instructions that is continually repeated until a certain condition is reached. We have **for** loops, **while** loops and **do** loops.
 
 #### 2. Let us go through our code
 We use import random to import the module that will randomize the computers choises in the game
@@ -27,7 +28,7 @@ We now ask the user to input his/her action
 user_action = input("Enter a choice (rock, paper, scissors): ")
 ```
 The computer will now randomly choose an action out of the options(possible actions) given
-```
+```Python
 possible_actions = ["rock", "paper", "scissors"]
     computer_action = random.choice(possible_actions)
     print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
@@ -36,7 +37,7 @@ possible_actions = ["rock", "paper", "scissors"]
 We now use a  if … elif … else block to compare the user and computer inputs and determine the winner.
 Comparing the tie condition first is helpful so that we get rid of the need to compare each user action to each computer action that would make our code longer and cumbersome.
 
-```
+```Python
 if user_action == computer_action:
         print(f"Both players selected {user_action}. It's a tie!")
     elif user_action == "rock":
@@ -57,7 +58,7 @@ if user_action == computer_action:
 ```
 **Continue playing after the first try**
 If a user would wish to play several rounds, we can add something to make it possible.
-```
+```Python
 play_again = input("Play again? (y/n): ")
     if play_again.lower() != "y":
         break
