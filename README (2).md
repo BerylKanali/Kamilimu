@@ -19,12 +19,12 @@ A sequence of instructions that is continually repeated until a certain conditio
 
 #### 2. Let us go through our code
 We use import random to import the module that will randomize the computers choises in the game
-```
+```Python
 import random
 ```
 **User and Computer input**
 We now ask the user to input his/her action
-```
+```Python
 user_action = input("Enter a choice (rock, paper, scissors): ")
 ```
 The computer will now randomly choose an action out of the options(possible actions) given
